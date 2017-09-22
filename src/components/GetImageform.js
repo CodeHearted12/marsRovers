@@ -23,7 +23,7 @@ componentDidMount(){
 }
 fetchRoverImage(){
   this.setState({camera: this.state.camera, rover: this.state.rover, sol: this.state.sol});
-  let cam = this.state.camera
+  let cam = this.state.camera;                                                                                                                                          
   let rover = this.state.rover
   let sol = this.state.sol
   let imageUrl = `https://api.nasa.gov/mars-photos/api/v1/rovers/${rover}/photos?sol=${sol}&camera=${cam}&api_key=${API_KEY}`;
